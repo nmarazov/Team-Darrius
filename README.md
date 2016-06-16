@@ -1,13 +1,15 @@
 # Team-Darrius
-## Family Budget Calculator - CSharp OOP Teamwork
+### Family Budget Calculator - CSharp OOP Teamwork
 [Link to Assignment](https://github.com/TelerikAcademy/Object-Oriented-Programming/tree/master/Teamwork)
----
-TO DO List:
+
+#### TO DO List:
 * Project Name
 * Project structure
+
 ---
 ### Project structure
 **Family**
+
 1. **Income**
   1. *Salary*
   2. *Others*
