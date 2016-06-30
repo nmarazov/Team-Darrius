@@ -1,6 +1,6 @@
 ﻿namespace BudgetCalculator.Core.Enum
 {
-    public enum Status
+    public enum FamilyMemberStatus
     {
         Working,
         Student,

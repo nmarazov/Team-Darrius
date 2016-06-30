@@ -1,7 +1,9 @@
 ﻿namespace BudgetCalculator.Core.Interface
 {
-    public interface IExpenses
-    {
+    using BudgetCalculator.Core.Enum;
 
+    public interface IExpenses : IBudget
+    {
+        ExpenseType TypeOfExpense { get; set; }
     }
 }

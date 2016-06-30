@@ -8,6 +8,6 @@
 
         sbyte Age { get; }
 
-        Status Status { get; }
+        FamilyMemberStatus Status { get; }
     }
 }

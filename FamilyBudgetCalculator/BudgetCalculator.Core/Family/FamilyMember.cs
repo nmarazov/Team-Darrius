@@ -2,12 +2,12 @@
 {
 
     using System;
-    using System.Collections.Generic;
     using Enum;
     using Interface;
 
     public class FamilyMember : IFamilyMember
     {
+        [ValidateAge]
         public sbyte Age
         {
             get
@@ -16,6 +16,7 @@
             }
         }
 
+        [ValidateName]
         public string Name
         {
             get
@@ -24,7 +25,7 @@
             }
         }
 
-        public Status Status
+        public FamilyMemberStatus Status
         {
             get
             {
