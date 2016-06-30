@@ -1,9 +1,13 @@
 ﻿namespace BudgetCalculator.Core.Income
 {
-    using System;
-    using System.Collections.Generic;
+    using Enum;
 
     public class Salary : Income
     {
+        public Salary(decimal value)
+            :base(value, Interval.Monthly)
+        {
+
+        }
     }
 }
