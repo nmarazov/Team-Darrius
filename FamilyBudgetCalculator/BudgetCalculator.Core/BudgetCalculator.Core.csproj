@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{098BC653-D531-4E37-A155-49F60862DE7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BudgetCalculator.Core</RootNamespace>
+    <AssemblyName>BudgetCalculator.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\Status.cs" />
+    <Compile Include="Expenses\Accommodation\Accommodation.cs" />
+    <Compile Include="Expenses\Accommodation\Mortgage.cs" />
+    <Compile Include="Expenses\Accommodation\Rent.cs" />
+    <Compile Include="Expenses\Expenses.cs" />
+    <Compile Include="Expenses\LifeExpenses\Car.cs" />
+    <Compile Include="Expenses\LifeExpenses\Children.cs" />
+    <Compile Include="Expenses\LifeExpenses\Entertainment.cs" />
+    <Compile Include="Expenses\LifeExpenses\Food.cs" />
+    <Compile Include="Expenses\LifeExpenses\Health.cs" />
+    <Compile Include="Expenses\LifeExpenses\LifeExpenses.cs" />
+    <Compile Include="Expenses\LifeExpenses\Other.cs" />
+    <Compile Include="Expenses\LifeExpenses\Travel.cs" />
+    <Compile Include="Expenses\Utilities\Cable.cs" />
+    <Compile Include="Expenses\Utilities\Electricity.cs" />
+    <Compile Include="Expenses\Utilities\Heating.cs" />
+    <Compile Include="Expenses\Utilities\Internet.cs" />
+    <Compile Include="Expenses\Utilities\Phone.cs" />
+    <Compile Include="Expenses\Utilities\Utilities.cs" />
+    <Compile Include="Expenses\Utilities\Water.cs" />
+    <Compile Include="Family\Family.cs" />
+    <Compile Include="Family\FamilyMember.cs" />
+    <Compile Include="Income\Income.cs" />
+    <Compile Include="Income\OtherIncome.cs" />
+    <Compile Include="Income\Salary.cs" />
+    <Compile Include="Interface\IExpenses.cs" />
+    <Compile Include="Interface\IFamilyMember.cs" />
+    <Compile Include="Interface\IIncome.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
