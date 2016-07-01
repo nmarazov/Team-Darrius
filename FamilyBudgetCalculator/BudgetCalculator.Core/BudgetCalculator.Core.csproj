@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\PaymentType.cs" />
     <Compile Include="Enum\ExpenseType.cs" />
     <Compile Include="Enum\Interval.cs" />
     <Compile Include="Enum\Status.cs" />
