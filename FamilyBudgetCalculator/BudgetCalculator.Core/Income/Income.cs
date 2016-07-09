@@ -1,14 +1,13 @@
 ﻿namespace BudgetCalculator.Core.Income
 {
-
     using System;
     using System.Collections.Generic;
     using Enum;
     using Interface;
 
-    public class Income : IIncome
+    public abstract class Income : IIncome
     {
-        decimal value;
+        private decimal value;
 
         public Income(decimal value, Interval period)
         {
@@ -20,7 +19,11 @@
 
         public decimal Value
         {
-            get { return this.value; }
+            get
+            {
+                return this.value;
+            }
+
             set
             {
                 if (value < 0)

@@ -5,9 +5,8 @@
     public class OtherIncome : Income
     {
         public OtherIncome(decimal value, Interval period)
-            :base(value, period)
+            : base(value, period)
         {
-
         }
     }
 }

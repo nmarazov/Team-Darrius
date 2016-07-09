@@ -1,10 +1,11 @@
 ﻿namespace BudgetCalculator.Core.Expenses
 {
     using System;
-    using Enum;
     using BudgetCalculator.Core.Interface;
+    using Enum;
 
-    public class Expenses : IExpenses
+
+    public abstract class Expenses : IExpenses
     {
         private ExpenseType typeofExpense;
 
@@ -25,29 +26,16 @@
         {
             get
             {
-                return typeofExpense;
+                return this.typeofExpense;
             }
 
-            protected set
+            set
             {
                 this.typeofExpense = value;
             }
         }
 
         public decimal Value
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        ExpenseType IExpenses.TypeOfExpense
         {
             get
             {

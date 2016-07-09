@@ -6,6 +6,6 @@
     {
         decimal Value { get; set; }
 
-        Interval Period {get;set;}
+        Interval Period { get; set; }
     }
 }

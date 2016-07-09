@@ -1,6 +1,5 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
-
     using System;
     using Enum;
     using Interface;

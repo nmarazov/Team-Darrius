@@ -1,10 +1,10 @@
-﻿using BudgetCalculator.Core.Enum;
-
-namespace BudgetCalculator.Core.Expenses.Accommodation
+﻿namespace BudgetCalculator.Core.Expenses.Accommodation
 {
+    using BudgetCalculator.Core.Enum;
+
     public class Accommodation : Expenses
     {
-        decimal value;
+        private decimal value;
 
         public void Expenses(decimal value, Interval period)
         {
@@ -12,11 +12,13 @@ namespace BudgetCalculator.Core.Expenses.Accommodation
             this.Period = period;
         }
 
-        public Interval Period { get; set; }
-
         public decimal Value
         {
-            get { return this.value; }
+            get
+            {
+                return this.value;
+            }
+
             set
             {
                 if (value < 0)
@@ -27,5 +29,7 @@ namespace BudgetCalculator.Core.Expenses.Accommodation
                 this.value = value;
             }
         }
+
+        public Interval Period { get; set; }
     }
 }

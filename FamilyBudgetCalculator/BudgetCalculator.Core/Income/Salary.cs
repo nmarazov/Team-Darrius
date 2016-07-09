@@ -5,9 +5,8 @@
     public class Salary : Income
     {
         public Salary(decimal value)
-            :base(value, Interval.Monthly)
+            : base(value, Interval.Monthly)
         {
-
         }
     }
 }
