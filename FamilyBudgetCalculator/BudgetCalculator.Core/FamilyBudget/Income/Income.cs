@@ -1,4 +1,4 @@
-﻿namespace BudgetCalculator.Core.Income
+﻿namespace BudgetCalculator.Core.FamilyBudget.Income
 {
     using System;
     using System.Collections.Generic;

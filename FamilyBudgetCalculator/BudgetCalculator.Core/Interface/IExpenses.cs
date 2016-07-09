@@ -2,7 +2,7 @@
 {
     using BudgetCalculator.Core.Enum;
 
-    public interface IExpenses : IBudget
+    public interface IExpenses
     {
         ExpenseType TypeOfExpense { get; set; }
 
