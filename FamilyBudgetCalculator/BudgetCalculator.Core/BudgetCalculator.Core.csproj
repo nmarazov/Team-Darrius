@@ -74,6 +74,7 @@
     <Compile Include="Interface\IFamilyMember.cs" />
     <Compile Include="Interface\IIncome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
