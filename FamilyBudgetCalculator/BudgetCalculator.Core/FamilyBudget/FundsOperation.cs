@@ -3,7 +3,7 @@
     using System;
     using BudgetCalculator.Core.Enum;
     using BudgetCalculator.Core.Interface;
-
+    using ValidationAttributes;
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
         private const int CommentMaxLength = 20;
@@ -34,6 +34,7 @@
             }
         }
 
+        [ValidateAmount]
         public decimal Amount
         {
             get
