@@ -10,32 +10,23 @@ namespace BudgetCalculator.Core.FamilyBudget
 {
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
-        private const int CommentMaxLength = 20;
-        private const int CommentMinLength = 0;
-
         private decimal amount;
         private string comment;
         private DateTime date;
         private Interval period;
 
-        public FundsOperation(decimal amount, string comment, Interval period, DateTime? date = null)
+        public FundsOperation(decimal amount, string comment, Interval period)
         {
-            Validation.CheckIfPositive(amount, "Amount must be positive");
             this.amount = amount;
-            
-            Validation.CheckIfStringLengthIsValid(comment, CommentMaxLength,CommentMinLength,string.Format("Comment must be between {0} and {1} long",CommentMinLength, CommentMaxLength));
             this.comment = comment;
-
             this.period = period;
-            
-            if (date == null)
-            {
-                this.date = DateTime.Now.Date;
-            }
-            else
-            {
-                this.date = (DateTime)date;
-            }
+            this.date = DateTime.Now.Date;
+        }
+
+        public FundsOperation(decimal amount, string comment, Interval period, DateTime date) 
+            : this(amount, comment, period)
+        {
+            this.date = date;
         }
 
         public decimal Amount

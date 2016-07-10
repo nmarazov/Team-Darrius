@@ -7,6 +7,8 @@
 
     public abstract class Income : FundsOperation, IIncome
     {
+        
+
         public IncomeType TypeOfIncome
         {
             get

@@ -24,5 +24,12 @@ namespace BudgetCalculator.Core
             }
         }
 
+        public static void CheckIfNull(object obj, string message = null)
+        {
+            if(obj == null)
+            {
+                throw new ArgumentNullException(message);
+            }
+        }
     }
 }
