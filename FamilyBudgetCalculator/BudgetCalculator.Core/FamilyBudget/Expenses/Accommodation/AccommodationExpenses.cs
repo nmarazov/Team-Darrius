@@ -37,7 +37,6 @@
             PaymentType paymentType = (PaymentType)System.Enum.Parse(typeof(PaymentType), split[4], true);
             AccomodationExpenseType accExpenseType = (AccomodationExpenseType)System.Enum.Parse(typeof(AccomodationExpenseType), split[6], true);
             DateTime date = DateTime.Parse(split[5]);
-            //TypeOfExpense.ToString(), Amount.ToString(), Comment.ToString(), Period.ToString(), WayOfPayment.ToString(), Date.ToString()
             return new AccommodationExpenses(value,comment,interval,paymentType,accExpenseType,date);
         }
     }
