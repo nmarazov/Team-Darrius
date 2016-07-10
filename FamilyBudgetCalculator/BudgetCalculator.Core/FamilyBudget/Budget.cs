@@ -20,7 +20,7 @@
             }
         }
 
-        public List<IExpenses> Expenses
+        public ICollection<IExpenses> Expenses
         {
             get
             {
