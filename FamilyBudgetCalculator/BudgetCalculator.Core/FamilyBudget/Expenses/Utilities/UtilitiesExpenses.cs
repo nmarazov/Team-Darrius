@@ -9,7 +9,7 @@ using BudgetCalculator.Core.Interface;
 
 namespace BudgetCalculator.Core.FamilyBudget.Expenses.Utilities
 {
-    public class UtilitiesExpenses : IUtilitesExpenses
+    public class UtilitiesExpenses : Expenses, IUtilitesExpenses
     {
         public UtilitiesExpenseType UtilitiesType
         {

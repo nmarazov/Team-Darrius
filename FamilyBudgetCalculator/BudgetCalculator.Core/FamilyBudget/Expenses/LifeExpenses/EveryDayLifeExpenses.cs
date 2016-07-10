@@ -9,7 +9,7 @@ using BudgetCalculator.Core.Interface;
 
 namespace BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses
 {
-    public class EveryDayLifeExpenses : IEveryDayLifeExpenses
+    public class EveryDayLifeExpenses : Expenses, IEveryDayLifeExpenses
     {
         public EveryDayLifeExpenseType EveryDayLife
         {

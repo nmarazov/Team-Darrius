@@ -52,6 +52,7 @@
     <Compile Include="FamilyBudget\Expenses\Accommodation\AccommodationExpenses.cs" />
     <Compile Include="FamilyBudget\Expenses\Expenses.cs" />
     <Compile Include="FamilyBudget\Expenses\LifeExpenses\EveryDayLifeExpenses.cs" />
+    <Compile Include="FamilyBudget\Expenses\OtherExpenses.cs" />
     <Compile Include="FamilyBudget\Expenses\PersonalExpenses.cs" />
     <Compile Include="FamilyBudget\Expenses\Utilities\UtilitiesExpenses.cs" />
     <Compile Include="FamilyBudget\FundsOperation.cs" />
