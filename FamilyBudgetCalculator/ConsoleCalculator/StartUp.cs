@@ -10,7 +10,7 @@
     {
         static void Main()
         {
-
+            CalculatorEngine.StartPage();
         }
     }
 }
