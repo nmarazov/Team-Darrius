@@ -5,8 +5,8 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IBudget
     {
-        decimal Balance { get; set; }
-        ICollection<IExpenses> Expenses { get; set; }
-        List<IIncome> Incommings { get; set; }
+        decimal Balance { get; }
+        ICollection<IExpenses> Expenses { get; }
+        ICollection<IIncome> Incommings { get; }
     }
 }

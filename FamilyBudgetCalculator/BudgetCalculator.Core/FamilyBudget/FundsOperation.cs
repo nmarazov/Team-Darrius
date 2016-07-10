@@ -1,27 +1,13 @@
-﻿using BudgetCalculator.Core.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetCalculator.Core.Enum;
-
-namespace BudgetCalculator.Core.FamilyBudget
+﻿namespace BudgetCalculator.Core.FamilyBudget
 {
+    using BudgetCalculator.Core.Interface;
+    using System;
+    using BudgetCalculator.Core.Enum;
+    using ValidationAttributes;
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
-        public decimal Amount
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        [ValidateAmount]
+        public decimal Amount { get; set; }
 
         public string Comment
         {

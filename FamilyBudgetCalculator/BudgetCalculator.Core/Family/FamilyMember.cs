@@ -27,11 +27,7 @@
         }
 
         [ValidateName]
-        public string FirstName
-        {
-            set { this.firstName = value; }
-            get { return this.firstName; }
-        }
+        public string FirstName { get; set; }
 
         [ValidateName]
         public string FamilyName
