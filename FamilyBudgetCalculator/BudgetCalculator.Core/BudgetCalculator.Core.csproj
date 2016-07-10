@@ -41,10 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\AccommodationExpenseType.cs" />
+    <Compile Include="Enum\EveryDayLifeExpenseType.cs" />
+    <Compile Include="Enum\IncomeType.cs" />
     <Compile Include="Enum\PaymentType.cs" />
-    <Compile Include="Enum\ExpenseType.cs" />
     <Compile Include="Enum\Interval.cs" />
     <Compile Include="Enum\FamilyMemberStatus.cs" />
+    <Compile Include="Enum\UtilitiesExpenseType.cs" />
     <Compile Include="FamilyBudget\Budget.cs" />
     <Compile Include="FamilyBudget\Expenses\Accommodation\Accommodation.cs" />
     <Compile Include="FamilyBudget\Expenses\Accommodation\Mortgage.cs" />
