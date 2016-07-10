@@ -6,7 +6,6 @@
     using ValidationAttributes;
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
-<<<<<<< HEAD
         private decimal amount;
         private string comment;
         private DateTime date;
@@ -33,10 +32,9 @@
                 return this.amount;
             }
         }
-=======
+
         [ValidateAmount]
         public decimal Amount { get; set; }
->>>>>>> 5b0cba7e3ffe3dbad53cf3c99973d9fcc7942b1a
 
         public string Comment
         {

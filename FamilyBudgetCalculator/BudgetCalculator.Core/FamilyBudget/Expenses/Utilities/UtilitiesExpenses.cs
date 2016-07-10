@@ -6,16 +6,16 @@
 
     public class UtilitiesExpenses : Expenses, IUtilitesExpenses
     {
-        private UtilitiesExpenseType utilitiesType;
+        private UtilitiesExpensesType utilitiesType;
 
-        public UtilitiesExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, UtilitiesExpenseType utilitiesType, DateTime date = default(DateTime))
+        public UtilitiesExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, UtilitiesExpensesType utilitiesType, DateTime date = default(DateTime))
             : base(amount, comment, period, wayOfPayment, date)
         {
             this.TypeOfExpense = ExpenseType.Utility;
             this.utilitiesType = utilitiesType;
         }
 
-        public UtilitiesExpenseType UtilitiesType
+        public UtilitiesExpensesType UtilitiesType
         {
             get
             {

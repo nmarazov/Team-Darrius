@@ -35,7 +35,7 @@
         {
             get; protected set;
         }
-        
+
         private decimal GetBalance()
         {
             var incomeSum = this.Incommings.Sum(x => x.Amount);
@@ -44,5 +44,45 @@
             return incomeSum - expenseSum;
         }
 
+        public void AddExpense(IExpenses expense)
+        {
+            this.Expenses.Add(expense);
+        }
+
+        public void AddIncome(IIncome income)
+        {
+            this.Incommings.Add(income);
+        }
+
+        public void RemoveExpense(IExpenses expense)
+        {
+            this.Expenses.Remove(expense);
+        }
+
+        public void RemoveIncome(IIncome income)
+        {
+            this.Incommings.Remove(income);
+        }
+
+        public ICollection<IIncome> GetIncomesByType(IncomeType type)
+        {
+            var incomesByType = this.Incommings.Where(x => x.TypeOfIncome == type).ToList();
+
+            return incomesByType;
+        }
+
+        public ICollection<IIncome> GetIncomesByDate(DateTime startDate)
+        {
+            return this.GetIncomesByDate(startDate, DateTime.Now);
+        }
+
+        public ICollection<IIncome> GetIncomesByDate(DateTime startDate, DateTime endDate)
+        {
+            var incomesByDate = this.Incommings
+                .Where(x => x.Date < endDate && x.Date > startDate)
+                .ToList();
+
+            return incomesByDate;
+        }
     }
 }
