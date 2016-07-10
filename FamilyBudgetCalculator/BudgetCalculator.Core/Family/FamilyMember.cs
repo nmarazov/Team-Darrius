@@ -1,5 +1,6 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
+    using System;
     using Enum;
     using Interface;
 
@@ -44,6 +45,19 @@
         {
             get { return this.familyMemeberStatus; }
             set { this.familyMemeberStatus = value; }
+        }
+
+        public string Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public override string ToString()

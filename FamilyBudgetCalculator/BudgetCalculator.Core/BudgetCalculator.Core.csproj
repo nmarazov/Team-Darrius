@@ -45,6 +45,7 @@
     <Compile Include="Enum\EveryDayLifeExpenseType.cs" />
     <Compile Include="Enum\ExpenseType.cs" />
     <Compile Include="Enum\IncomeType.cs" />
+    <Compile Include="Enum\OtherExpensesType.cs" />
     <Compile Include="Enum\PaymentType.cs" />
     <Compile Include="Enum\Interval.cs" />
     <Compile Include="Enum\FamilyMemberStatus.cs" />
