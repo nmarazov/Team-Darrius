@@ -9,6 +9,6 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IUtilitesExpenses
     {
-        UtilitiesExpenseType UtilitiesType { get; }
+        UtilitiesExpensesType UtilitiesType { get; }
     }
 }

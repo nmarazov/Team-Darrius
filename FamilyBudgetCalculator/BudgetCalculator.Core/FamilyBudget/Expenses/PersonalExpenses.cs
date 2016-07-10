@@ -2,36 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BudgetCalculator.Core.Enum;
 using BudgetCalculator.Core.Interface;
 
 namespace BudgetCalculator.Core.FamilyBudget.Expenses
 {
-    public class PersonalExpenses : Expenses, IPersonalExpenses, INameable
+    public class PersonalExpenses : Expenses, IPersonalExpenses
     {
-        public IFamilyMember FamilyMember
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        private PersonalExpensesType personalType;
 
-            set
-            {
-                throw new NotImplementedException();
-            }
+        public PersonalExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, PersonalExpensesType personalType, DateTime date = default(DateTime))
+            : base(amount, comment, period, wayOfPayment, date)
+        {
+            this.personalType = personalType;
         }
 
-        public string Name // e.g. cinema, girls, etc.
+        public PersonalExpensesType PersonalType
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.personalType;
             }
         }
     }
+
 }
