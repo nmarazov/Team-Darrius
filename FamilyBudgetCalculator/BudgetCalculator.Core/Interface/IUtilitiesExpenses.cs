@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BudgetCalculator.Core.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IUtilitesExpenses : IExpenses
     {
-        UtilitiesExpenceType UtilitiesType { get; set; }
+        UtilitiesExpenseType UtilitiesType { get; set; }
     }
 }
