@@ -12,7 +12,6 @@ namespace BudgetCalculator.Core.Interface
         decimal Amount { get; set; }
         DateTime Date { get; set; }
 
-        string Name { get; set; }
         string Comment { get; set; }
         Interval Period { get; set; }
 

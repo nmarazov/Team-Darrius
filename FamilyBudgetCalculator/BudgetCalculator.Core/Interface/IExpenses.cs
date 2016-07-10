@@ -2,8 +2,9 @@
 {
     using BudgetCalculator.Core.Enum;
 
-    public interface IExpenses
+    public interface IExpenses 
     {
-        ExpenseType TypeOfExpense { get; set; }
+        PaymentType WayOfPayment { get; set; }
+
     }
 }
