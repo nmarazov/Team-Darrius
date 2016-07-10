@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 // ENUMERATIONS
 public enum Interval
 {
