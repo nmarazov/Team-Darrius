@@ -9,6 +9,6 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IAccomodationExpenses 
     {
-        AccomodationExpenseType AccomodationType { get; set; }
+        AccomodationExpenseType AccomodationType { get; }
     }
 }

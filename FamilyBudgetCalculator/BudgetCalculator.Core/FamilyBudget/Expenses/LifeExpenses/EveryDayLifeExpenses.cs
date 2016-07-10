@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetCalculator.Core.Enum;
-using BudgetCalculator.Core.Interface;
-
-
-namespace BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses
+﻿namespace BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses
 {
+    using System;
+    using BudgetCalculator.Core.Enum;
+    using BudgetCalculator.Core.Interface;
+    
     public class EveryDayLifeExpenses : Expenses, IEveryDayLifeExpenses
     {
+        private EveryDayLifeExpenseType everyDayLife;
+
+        public EveryDayLifeExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, EveryDayLifeExpenseType everyDayLife, DateTime date = default(DateTime))
+            : base(amount, comment, period, wayOfPayment, date)
+        {
+            this.everyDayLife = everyDayLife;
+        }
+
         public EveryDayLifeExpenseType EveryDayLife
         {
             get
             {
-                throw new NotImplementedException();
+                return this.everyDayLife;
             }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        
+        }   
     }
 }

@@ -4,7 +4,7 @@
 
     public interface IExpenses : IFundsOperation
     {
-        PaymentType WayOfPayment { get; set; }
+        PaymentType WayOfPayment { get; }
 
     }
 }

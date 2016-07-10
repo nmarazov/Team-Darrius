@@ -1,13 +1,9 @@
-﻿using BudgetCalculator.Core.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetCalculator.Core.Enum;
-
-namespace BudgetCalculator.Core.FamilyBudget
+﻿namespace BudgetCalculator.Core.FamilyBudget
 {
+    using System;
+    using BudgetCalculator.Core.Enum;
+    using BudgetCalculator.Core.Interface;
+
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
         private const int CommentMaxLength = 20;
@@ -18,7 +14,7 @@ namespace BudgetCalculator.Core.FamilyBudget
         private DateTime date;
         private Interval period;
 
-        public FundsOperation(decimal amount, string comment, Interval period, DateTime? date = null)
+        public FundsOperation(decimal amount, string comment, Interval period, DateTime date = default(DateTime))
         {
             Validation.CheckIfPositive(amount, "Amount must be positive");
             this.amount = amount;
@@ -28,13 +24,13 @@ namespace BudgetCalculator.Core.FamilyBudget
 
             this.period = period;
             
-            if (date == null)
+            if (date == default(DateTime))
             {
                 this.date = DateTime.Now.Date;
             }
             else
             {
-                this.date = (DateTime)date;
+                this.date = date;
             }
         }
 
@@ -68,6 +64,11 @@ namespace BudgetCalculator.Core.FamilyBudget
             {
                 return this.period;
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

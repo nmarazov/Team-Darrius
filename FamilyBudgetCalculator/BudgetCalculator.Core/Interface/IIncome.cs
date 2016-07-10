@@ -4,6 +4,6 @@
 
     public interface IIncome : IFundsOperation
     {
-        IncomeType TypeOfIncome { get; set; }
+        IncomeType TypeOfIncome { get; }
     }
 }

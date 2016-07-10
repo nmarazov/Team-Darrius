@@ -7,18 +7,19 @@
 
     public abstract class Income : FundsOperation, IIncome
     {
-        
+        private IncomeType typeOfIncome;
+
+        public Income(decimal amount, string comment, Interval period, IncomeType typeOfIncome, DateTime date = default(DateTime))
+            : base(amount, comment, period, date)
+        {
+            this.typeOfIncome = typeOfIncome;
+        }
 
         public IncomeType TypeOfIncome
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.typeOfIncome;
             }
         }
     }

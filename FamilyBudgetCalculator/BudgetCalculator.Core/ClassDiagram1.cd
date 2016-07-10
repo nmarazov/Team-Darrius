@@ -32,7 +32,7 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Budget" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="14.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAABIAAAAAAKAAQAAAAEAAAA=</HashCode>
       <FileName>FamilyBudget\Budget.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -40,7 +40,7 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.FundsOperation" Collapsed="true">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAEAAAAAAAAAAAAAACAAAAAgAABAAAAAwAAAAI=</HashCode>
+      <HashCode>AAQAAAAEAAAQAAAAAAAAAACAAAAAwAABAAAAAwAAAAI=</HashCode>
       <FileName>FamilyBudget\FundsOperation.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -104,7 +104,7 @@
   <Class Name="BudgetCalculator.Core.Validation" Collapsed="true">
     <Position X="16" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAA=</HashCode>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAA=</HashCode>
       <FileName>Validation.cs</FileName>
     </TypeIdentifier>
   </Class>
