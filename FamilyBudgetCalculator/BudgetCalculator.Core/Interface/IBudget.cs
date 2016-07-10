@@ -7,6 +7,5 @@ namespace BudgetCalculator.Core.Interface
         decimal Balance { get; set; }
         List<IExpenses> Expenses { get; set; }
         List<IIncome> Incommings { get; set; }
-
     }
 }
