@@ -4,8 +4,7 @@
     using BudgetCalculator.Core.Interface;
     using Enum;
 
-
-    public abstract class Expenses : IExpenses
+    public abstract class Expenses : Budget, IExpenses
     {
         private ExpenseType typeofExpense;
 
@@ -47,5 +46,7 @@
                 throw new NotImplementedException();
             }
         }
+
+        public abstract decimal PayMoney();
     }
 }

@@ -10,21 +10,21 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Accommodation.Mortgage" Collapsed="true">
     <Position X="15.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Accommodation\Mortgage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Accommodation.Rent" Collapsed="true">
     <Position X="17.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Accommodation\Rent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Expenses" Collapsed="true">
     <Position X="17.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAgAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAIgAAAAAAI=</HashCode>
       <FileName>FamilyBudget\Expenses\Expenses.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -32,35 +32,35 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Car" Collapsed="true">
     <Position X="31.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Car.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Children" Collapsed="true">
     <Position X="20" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Children.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Entertainment" Collapsed="true">
     <Position X="24.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Entertainment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Food" Collapsed="true">
     <Position X="26.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Food.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Health" Collapsed="true">
     <Position X="29" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Health.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -74,49 +74,49 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Other" Collapsed="true">
     <Position X="33.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Other.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.Travel" Collapsed="true">
     <Position X="22.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\LifeExpenses\Travel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Cable" Collapsed="true">
     <Position X="2" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Cable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Electricity" Collapsed="true">
     <Position X="6.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Electricity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Heating" Collapsed="true">
     <Position X="8.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Heating.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Internet" Collapsed="true">
     <Position X="11" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Internet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Phone" Collapsed="true">
     <Position X="13.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Phone.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -126,11 +126,12 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Utilities.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.Water" Collapsed="true">
     <Position X="4.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Expenses\Utilities\Water.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -152,7 +153,7 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Income.Income" Collapsed="true">
     <Position X="1.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEgAAAAAAI=</HashCode>
       <FileName>FamilyBudget\Income\Income.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -160,21 +161,21 @@
   <Class Name="BudgetCalculator.Core.FamilyBudget.Income.OtherIncome" Collapsed="true">
     <Position X="2.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Income\OtherIncome.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BudgetCalculator.Core.FamilyBudget.Income.Salary" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>FamilyBudget\Income\Salary.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="BudgetCalculator.Core.Interface.IExpenses" Collapsed="true">
     <Position X="36" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interface\IExpenses.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -188,7 +189,7 @@
   <Interface Name="BudgetCalculator.Core.Interface.IIncome" Collapsed="true">
     <Position X="36" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interface\IIncome.cs</FileName>
     </TypeIdentifier>
   </Interface>
