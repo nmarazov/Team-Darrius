@@ -1,6 +1,5 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
-    using System;
     using Enum;
     using Interface;
 
@@ -27,7 +26,11 @@
         }
 
         [ValidateName]
-        public string FirstName { get; set; }
+        public string FirstName
+        {
+            set { this.firstName = value; }
+            get { return this.firstName; }
+        }
 
         [ValidateName]
         public string FamilyName
@@ -37,11 +40,15 @@
         }
 
 
-
         public FamilyMemberStatus Status
         {
             get { return this.familyMemeberStatus; }
             set { this.familyMemeberStatus = value; }
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}#{1}#{2}#{3}", firstName, familyName, age.ToString(), familyMemeberStatus.ToString());
         }
     }
 }
