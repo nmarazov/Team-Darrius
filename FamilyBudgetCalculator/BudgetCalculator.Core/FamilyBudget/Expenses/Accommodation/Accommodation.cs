@@ -2,7 +2,7 @@
 {
     using BudgetCalculator.Core.Enum;
 
-    public class Accommodation : Expenses
+    public abstract class Accommodation : Expenses
     {
         private decimal value;
 
