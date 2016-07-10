@@ -6,16 +6,19 @@
 
     public abstract class Expenses : FundsOperation, IExpenses
     {
+        private PaymentType wayOfPayment;
+
+        public Expenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, DateTime date = default(DateTime))
+            : base(amount, comment, period, date)
+        {
+            this.wayOfPayment = wayOfPayment;
+        }
+
         public PaymentType WayOfPayment
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.wayOfPayment;
             }
         }
     }

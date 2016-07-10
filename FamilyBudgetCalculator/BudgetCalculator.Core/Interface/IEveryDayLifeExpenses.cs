@@ -9,6 +9,6 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IEveryDayLifeExpenses 
     {
-        EveryDayLifeExpenseType EveryDayLife { get; set; }
+        EveryDayLifeExpenseType EveryDayLife { get; }
     }
 }
