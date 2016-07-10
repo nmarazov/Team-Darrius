@@ -1,2 +1,238 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BudgetCalculator.Core.Family.Family" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Family\Family.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetCalculator.Core.Family.FamilyMember" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAEAABAQAAAAEAEAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Family\FamilyMember.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.Family.ValidateAgeAttribute" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAgAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Family\ValidateAgeAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetCalculator.Core.Family.ValidateNameAttribute" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgQAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Family\ValidateNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Budget" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Budget.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.FundsOperation" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAAAAAAAAAACAAAAAgAABAAAAAwAAAAI=</HashCode>
+      <FileName>FamilyBudget\FundsOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Accommodation.AccommodationExpenses" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\Accommodation\AccommodationExpenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Expenses" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\Expenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.OtherExpenses" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\OtherExpenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.PersonalExpenses" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\PersonalExpenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.LifeExpenses.EveryDayLifeExpenses" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\LifeExpenses\EveryDayLifeExpenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Expenses.Utilities.UtilitiesExpenses" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Expenses\Utilities\UtilitiesExpenses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.FamilyBudget.Income.Income" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FamilyBudget\Income\Income.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BudgetCalculator.Core.Validation" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAA=</HashCode>
+      <FileName>Validation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BudgetCalculator.Core.Interface.IAccomodationExpenses" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IAccomodationExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IBudget" Collapsed="true">
+    <Position X="16" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>Interface\IBudget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IEveryDayLifeExpenses" Collapsed="true">
+    <Position X="17.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IEveryDayLifeExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IExpenses" Collapsed="true">
+    <Position X="19.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IFamilyMember" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IFamilyMember.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IFundsOperation" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAAAI=</HashCode>
+      <FileName>Interface\IFundsOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IIncome" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IIncome.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.INameable" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\INameable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IOtherExpenses" Collapsed="true">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IOtherExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IPersonalExpenses">
+    <Position X="16" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IPersonalExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BudgetCalculator.Core.Interface.IUtilitesExpenses" Collapsed="true">
+    <Position X="17.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IUtilitiesExpenses.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BudgetCalculator.Core.Enum.AccomodationExpenseType" Collapsed="true">
+    <Position X="14.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAIAAAACAAAAAAAAAAAiAAAAA=</HashCode>
+      <FileName>Enum\AccommodationExpenseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.EveryDayLifeExpenseType" Collapsed="true">
+    <Position X="16" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAQ=</HashCode>
+      <FileName>Enum\EveryDayLifeExpenseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.FamilyMemberStatus" Collapsed="true">
+    <Position X="17.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAQAAAAIAAABAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Enum\FamilyMemberStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.IncomeType" Collapsed="true">
+    <Position X="19.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAACAAAEAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\IncomeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.Interval" Collapsed="true">
+    <Position X="14.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAgAAAAAAgA=</HashCode>
+      <FileName>Enum\Interval.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.PaymentType" Collapsed="true">
+    <Position X="16" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAACAQAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\PaymentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BudgetCalculator.Core.Enum.UtilitiesExpenseType" Collapsed="true">
+    <Position X="17.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACIAgAAAAAAAhIAAAAAA=</HashCode>
+      <FileName>Enum\UtilitiesExpenseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

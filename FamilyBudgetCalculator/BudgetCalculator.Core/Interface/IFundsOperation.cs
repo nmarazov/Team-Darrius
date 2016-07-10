@@ -9,11 +9,11 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IFundsOperation
     {
-        decimal Amount { get; set; }
-        DateTime Date { get; set; }
+        decimal Amount { get; }
+        DateTime Date { get; }
 
-        string Comment { get; set; }
-        Interval Period { get; set; }
+        string Comment { get; }
+        Interval Period { get; }
 
     }
 }

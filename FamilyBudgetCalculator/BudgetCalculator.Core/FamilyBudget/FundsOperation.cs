@@ -10,16 +10,30 @@ namespace BudgetCalculator.Core.FamilyBudget
 {
     public abstract class FundsOperation : IFundsOperation // Common fields for both Income and Expense
     {
+        private decimal amount;
+        private string comment;
+        private DateTime date;
+        private Interval period;
+
+        public FundsOperation(decimal amount, string comment, Interval period)
+        {
+            this.amount = amount;
+            this.comment = comment;
+            this.period = period;
+            this.date = DateTime.Now.Date;
+        }
+
+        public FundsOperation(decimal amount, string comment, Interval period, DateTime date) 
+            : this(amount, comment, period)
+        {
+            this.date = date;
+        }
+
         public decimal Amount
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.amount;
             }
         }
 
@@ -27,12 +41,7 @@ namespace BudgetCalculator.Core.FamilyBudget
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.comment;
             }
         }
 
@@ -40,12 +49,7 @@ namespace BudgetCalculator.Core.FamilyBudget
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.date;
             }
         }
 
@@ -53,12 +57,7 @@ namespace BudgetCalculator.Core.FamilyBudget
         {
             get
             {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
+                return this.period;
             }
         }
     }
