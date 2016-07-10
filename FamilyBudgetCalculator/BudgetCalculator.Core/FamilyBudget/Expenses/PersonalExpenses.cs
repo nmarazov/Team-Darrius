@@ -44,12 +44,12 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
 
         public override string ToString()
         {
-            return base.ToString() + "#" + this.ConnectedFamilyMember.ToString() + "#" + this.Name;
+            return base.ToString() + "," +this.Name + "," +this.ConnectedFamilyMember.ToString();
         }
 
         public static PersonalExpenses FromString(string input,List<FamilyMember> familyMembers)
         {
-            string[] split = input.Split('#');
+            string[] split = input.Split(',');
 
             decimal value = decimal.Parse(split[1]);
             string comment = split[2];
@@ -58,9 +58,27 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
             DateTime date = DateTime.Parse(split[5]);
 
             PersonalExpenses expense = new PersonalExpenses(value, comment, interval, paymentType, date);
-            FamilyMember comparer = FamilyMember.FromString(split[6]);
-            FamilyMember trueMember = familyMembers.Find(x => x.ToString() == comparer.ToString());
-            expense.ConnectedFamilyMember = trueMember;
+            expense.Name = split[6];
+
+            if(split.Length > 7)
+            {
+                //firstName, familyName, age.ToString(), familyMemeberStatus.ToString()
+                string firstName = split[7];
+                string lastName = split[8];
+                string age = split[9];
+                string status = split[10];
+
+                string familyMemberString = string.Format("{0},{1},{2},{3}", firstName, lastName, age, status);
+
+                FamilyMember comparer = FamilyMember.FromString(familyMemberString);
+                FamilyMember trueMember = familyMembers.Find(x => x.ToString() == comparer.ToString());
+                expense.ConnectedFamilyMember = trueMember;
+            }
+            else
+            {
+                throw new Exception("NO CONNECTED FAMILY MEMBER!");
+            }
+
             return expense;
         }
     }

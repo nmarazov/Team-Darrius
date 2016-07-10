@@ -48,12 +48,12 @@
 
         public override string ToString()
         {
-            return string.Format("{0}*{1}*{2}*{3}", firstName, familyName, age.ToString(), familyMemeberStatus.ToString());
+            return string.Format("{0},{1},{2},{3}", firstName, familyName, age.ToString(), familyMemeberStatus.ToString());
         }
 
         public static FamilyMember FromString(string input)
         {
-            string[] split = input.Split('*');
+            string[] split = input.Split(',');
             return new FamilyMember(split[0], split[1], sbyte.Parse(split[2]), (FamilyMemberStatus)System.Enum.Parse(typeof(FamilyMemberStatus), split[3], true));
         }
     }

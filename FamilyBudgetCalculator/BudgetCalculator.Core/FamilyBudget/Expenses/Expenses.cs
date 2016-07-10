@@ -38,7 +38,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0}#{1}#{2}#{3}#{4}#{5}", TypeOfExpense.ToString(), Amount.ToString(), Comment.ToString(), Period.ToString(), WayOfPayment.ToString(), Date.ToString());
+            return string.Format("{0},{1},{2},{3},{4},{5}", TypeOfExpense.ToString(), Amount.ToString(), Comment.ToString(), Period.ToString(), WayOfPayment.ToString(), Date.ToString());
         }
     }
 }

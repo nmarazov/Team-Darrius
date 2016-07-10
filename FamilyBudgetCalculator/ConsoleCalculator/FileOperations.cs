@@ -27,9 +27,9 @@ namespace ConsoleCalculator
             //if not create it 
             //Add folderpath
 
-            System.IO.File.WriteAllText(Path.Combine(path,"family.txt"), familyString);
-            System.IO.File.WriteAllText(Path.Combine(path,"expenses.txt"), expenseString);
-            System.IO.File.WriteAllText(Path.Combine(path,"incomes.txt"), incomeString);
+            System.IO.File.WriteAllText(Path.Combine(path,"family.csv"), familyString);
+            System.IO.File.WriteAllText(Path.Combine(path,"expenses.csv"), expenseString);
+            System.IO.File.WriteAllText(Path.Combine(path,"incomes.csv"), incomeString);
         }
 
         public static ICollection<FamilyMember> LoadFamily(string saveFileName)
@@ -43,7 +43,7 @@ namespace ConsoleCalculator
             }
             else
             {
-                string[] lines = File.ReadAllLines(Path.Combine(path, "family.txt"), Encoding.UTF8);
+                string[] lines = File.ReadAllLines(Path.Combine(path, "family.csv"), Encoding.UTF8);
                 foreach(var line in lines)
                 {
                     family.Add(FamilyMember.FromString(line));
@@ -64,7 +64,7 @@ namespace ConsoleCalculator
             }
             else
             {
-                string[] lines = File.ReadAllLines(Path.Combine(path, "incomes.txt"), Encoding.UTF8);
+                string[] lines = File.ReadAllLines(Path.Combine(path, "incomes.csv"), Encoding.UTF8);
                 foreach (var line in lines)
                 {
                     income.Add(Income.FromString(line));
@@ -85,10 +85,10 @@ namespace ConsoleCalculator
             }
             else
             {
-                string[] lines = File.ReadAllLines(Path.Combine(path, "expenses.txt"), Encoding.UTF8);
+                string[] lines = File.ReadAllLines(Path.Combine(path, "expenses.csv"), Encoding.UTF8);
                 foreach (var line in lines)
                 {
-                    string[] parts = line.Split('#');
+                    string[] parts = line.Split(',');
                     ExpenseType type = (ExpenseType)System.Enum.Parse(typeof(ExpenseType), parts[0], true);
 
                     if(type == ExpenseType.Accomodation)

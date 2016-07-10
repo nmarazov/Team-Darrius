@@ -28,12 +28,12 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
 
         public override string ToString()
         {
-            return base.ToString() + "#" + this.Name;
+            return base.ToString() + "," + this.Name;
         }
 
         public static OtherExpenses FromString(string input)
         {
-            string[] split = input.Split('#');
+            string[] split = input.Split(',');
             decimal value = decimal.Parse(split[1]);
             string comment = split[2];
             Interval interval = (Interval)System.Enum.Parse(typeof(Interval), split[3], true);
