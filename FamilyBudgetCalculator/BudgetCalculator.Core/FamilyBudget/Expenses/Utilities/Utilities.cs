@@ -1,6 +1,9 @@
 ﻿namespace BudgetCalculator.Core.FamilyBudget.Expenses.Utilities
 {
-    public class Utilities : Expenses
+    using System;
+    using BudgetCalculator.Core.Interface;
+
+    public abstract class Utilities : Expenses, IExpenses
     {
     }
 }

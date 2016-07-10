@@ -4,8 +4,5 @@
 
     public interface IIncome
     {
-        decimal Value { get; set; }
-
-        Interval Period { get; set; }
     }
 }

@@ -5,7 +5,7 @@
     using Enum;
     using Interface;
 
-    public abstract class Income : IIncome
+    public abstract class Income : Budget, IIncome
     {
         private decimal value;
 
@@ -34,5 +34,7 @@
                 this.value = value;
             }
         }
+
+        public abstract decimal GetMoney();
     }
 }
