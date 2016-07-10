@@ -13,7 +13,10 @@
 
         public FamilyMember(string firstName, string familyName, sbyte age, FamilyMemberStatus status)
         {
-            this.firstName
+            this.FirstName = firstName;
+            this.FamilyName = familyName;
+            this.age = age;
+            this.Status = familyMemeberStatus;
         }
 
         [ValidateAge]
