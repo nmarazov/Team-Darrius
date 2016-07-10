@@ -25,6 +25,9 @@ namespace ConsoleCalculator
         {
             int result = 0;
             bool ChoiceNotValid = true;
+            Console.WriteLine();
+            Console.WriteLine();
+
             for (int i = 0; i < items.Length; i++)
             {
                 Console.WriteLine("{0}. {1}", i + 1, items[i]);
@@ -56,6 +59,85 @@ namespace ConsoleCalculator
             return result;
         }
 
+        public static void InputFamilyMemberScreen()
+        {
+            //TODO: Declaration of local family member
+
+            string inputName = "";
+            sbyte inputAge = 0;
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Input a family member");
+            Console.WriteLine();
+            Console.Write("Name: ");
+            bool NameIsNotValid = true;
+            while (NameIsNotValid)
+            {
+                try
+                {
+                    inputName = Console.ReadLine();
+                    //Hristo must write the validation for the name
+                    NameIsNotValid = false;
+                }
+                catch
+                {
+
+                }
+
+            }
+            Console.Write("Age: ");
+            bool AgeIsNotValid = true;
+            while (AgeIsNotValid)
+            {
+                try
+                {
+                    inputAge = sbyte.Parse(Console.ReadLine());
+                    //Hristo must write the validation for the age
+                    AgeIsNotValid = false;
+                }
+                catch
+                {
+
+                }
+
+            }
+
+            //TODO: add the family member in the list
+            InputFamilyMemberMenu();
+        }
+
+        public static void DisplayFamilyMembers()
+        {
+            // TODO: 
+            InputFamilyMemberMenu();
+        }
+
+        public static void InputFamilyMemberMenu()
+        {
+            string[] familyMemberMenu = new string[3]{
+                "Input a family member",
+                "Preview family members",
+                "Exit"
+                };
+            int familyMemberChoice = Menu(familyMemberMenu);
+            if (familyMemberChoice == 1)
+            {
+                InputFamilyMemberScreen();
+                //TODO: Input a family member
+            }
+            else if (familyMemberChoice == 2)
+            {
+                DisplayFamilyMembers();
+            }
+            else
+            {
+                StartPage();
+            }
+
+        }
+
         public static void StartPage()
         {
             string[] mainMenu = new string[3]{
@@ -65,9 +147,14 @@ namespace ConsoleCalculator
                 };
 
             int mainChoice = Menu(mainMenu);
+
             if (mainChoice == 1)
             {
+                Console.WriteLine();
+                Console.WriteLine();
+
                 Console.WriteLine("New Budget");
+                InputFamilyMemberMenu();
                 // TODO: Input of new budget
             }
             else if (mainChoice == 2)
@@ -76,7 +163,11 @@ namespace ConsoleCalculator
                 // TODO: Read from file
             }
             else
+            {
+                // TODO Request recording in a file
                 Console.WriteLine("Thank you for using this program");
+            }
         }
+
     }
 }

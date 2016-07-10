@@ -2,11 +2,13 @@
 {
     using Enum;
 
-    public interface IFamilyMember
+    public interface IFamilyMember: INameable
     {
-        string FirstName { get; set; }
+        //string FirstName { get; set; }
 
-        string FamilyName { get; set; }
+        //string FamilyName { get; set; }
+
+        //string Name { get; set; }
 
         sbyte Age { get; }
 

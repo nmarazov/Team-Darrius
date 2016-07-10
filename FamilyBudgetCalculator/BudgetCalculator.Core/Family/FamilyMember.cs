@@ -4,18 +4,22 @@
     using Enum;
     using Interface;
 
-    public class FamilyMember : IFamilyMember
+    public class FamilyMember : IFamilyMember, INameable
     {
         private sbyte age;
-        private string firstName;
-        private string familyName;
+        // private string firstName;
+        // private string familyName;
+        private string name;
+        
         private FamilyMemberStatus familyMemeberStatus;
 
-        public FamilyMember(string firstName, string familyName, sbyte age, FamilyMemberStatus status)
+        //public FamilyMember(string firstName, string familyName, sbyte age, FamilyMemberStatus status)
+        public FamilyMember(string name, sbyte age, FamilyMemberStatus status)
         {
-            this.FirstName = firstName;
-            this.FamilyName = familyName;
-            this.age = age;
+            //this.FirstName = firstName;
+            //this.FamilyName = familyName;
+            this.Name = name;
+            this.Age = age;
             this.Status = familyMemeberStatus;
         }
 
@@ -27,14 +31,20 @@
         }
 
         [ValidateName]
-        public string FirstName { get; set; }
-
-        [ValidateName]
-        public string FamilyName
+        //public string FirstName { get; set; }
+        public string Name
         {
-            set { this.familyName = value; }
-            get { return this.familyName; }
+            set { this.Name = value; }
+            get { return this.Name; }
         }
+
+         //   [ValidateName]
+
+        //public string FamilyName
+        //{
+        //    set { this.familyName = value; }
+        //    get { return this.familyName; }
+        //}
 
 
 
@@ -43,5 +53,6 @@
             get { return this.familyMemeberStatus; }
             set { this.familyMemeberStatus = value; }
         }
+
     }
 }
