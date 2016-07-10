@@ -30,4 +30,3 @@ namespace BudgetCalculator.Core.Family
         }
     }
 }
-}
