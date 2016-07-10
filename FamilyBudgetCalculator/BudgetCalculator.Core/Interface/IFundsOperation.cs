@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BudgetCalculator.Core.Interface
 {
-    public interface IFundOperation
+    public interface IFundsOperation
     {
         decimal Amount { get; set; }
         DateTime Date { get; set; }

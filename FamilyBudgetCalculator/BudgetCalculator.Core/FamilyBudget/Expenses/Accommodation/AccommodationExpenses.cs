@@ -1,13 +1,11 @@
-﻿namespace BudgetCalculator.Core.FamilyBudget.Income
+﻿namespace BudgetCalculator.Core.FamilyBudget.Expenses.Accommodation
 {
     using System;
-    using System.Collections.Generic;
-    using Enum;
+    using BudgetCalculator.Core.Enum;
     using Interface;
-
-    public abstract class Income : FundsOperation, IIncome
+    public abstract class AccommodationExpenses : Expenses, IAccomodationExpenses
     {
-        public IncomeType TypeOfIncome
+        public AccomodationExpenseType AccomodationType
         {
             get
             {

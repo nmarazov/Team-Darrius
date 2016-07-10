@@ -4,11 +4,9 @@
     using BudgetCalculator.Core.Interface;
     using Enum;
 
-    public abstract class Expenses : Budget, IExpenses
+    public abstract class Expenses : FundsOperation, IExpenses
     {
-        private ExpenseType typeofExpense;
-
-        public Interval Period
+        public PaymentType WayOfPayment
         {
             get
             {
@@ -20,33 +18,5 @@
                 throw new NotImplementedException();
             }
         }
-
-        public ExpenseType TypeOfExpense
-        {
-            get
-            {
-                return this.typeofExpense;
-            }
-
-            set
-            {
-                this.typeofExpense = value;
-            }
-        }
-
-        public decimal Value
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public abstract decimal PayMoney();
     }
 }

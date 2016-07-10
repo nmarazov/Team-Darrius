@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BudgetCalculator.Core.Interface
 {
-    public interface IUtilitesExpenses : IExpenses
+    public interface IUtilitesExpenses
     {
         UtilitiesExpenseType UtilitiesType { get; set; }
     }

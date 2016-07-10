@@ -2,7 +2,7 @@
 {
     using BudgetCalculator.Core.Enum;
 
-    public interface IIncome : IFundOperation
+    public interface IIncome 
     {
         IncomeType TypeOfIncome { get; set; }
     }

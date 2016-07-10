@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetCalculator.Core.Interface
 {
-    public interface IOtherExpenses : INameable
+    public interface IOtherExpenses
     {
 
     }
