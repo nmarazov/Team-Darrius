@@ -11,6 +11,7 @@
         public EveryDayLifeExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, EveryDayLifeExpenseType everyDayLife, DateTime date = default(DateTime))
             : base(amount, comment, period, wayOfPayment, date)
         {
+            this.TypeOfExpense = ExpenseType.EveryDayLife;
             this.everyDayLife = everyDayLife;
         }
 
@@ -20,6 +21,11 @@
             {
                 return this.everyDayLife;
             }
-        }   
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + "#" + this.EveryDayLife.ToString();
+        }
     }
 }

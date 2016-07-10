@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Enum\AccommodationExpenseType.cs" />
     <Compile Include="Enum\EveryDayLifeExpenseType.cs" />
+    <Compile Include="Enum\ExpenseType.cs" />
     <Compile Include="Enum\IncomeType.cs" />
     <Compile Include="Enum\PaymentType.cs" />
     <Compile Include="Enum\Interval.cs" />

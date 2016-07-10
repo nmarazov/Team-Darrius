@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BudgetCalculator.Core.Enum;
 using BudgetCalculator.Core.Interface;
 
 namespace BudgetCalculator.Core.FamilyBudget.Expenses
 {
     public class OtherExpenses : Expenses, INameable
     {
+        public OtherExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, DateTime date = default(DateTime)) : base(amount, comment, period, wayOfPayment, date)
+        {
+            this.TypeOfExpense = ExpenseType.Other;
+        }
+
         public string Name
         {
             get
@@ -20,6 +22,11 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
             {
                 throw new NotImplementedException();
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + "#" + this.Name;
         }
     }
 }

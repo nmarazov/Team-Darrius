@@ -11,6 +11,7 @@
         public UtilitiesExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, UtilitiesExpenseType utilitiesType, DateTime date = default(DateTime))
             : base(amount, comment, period, wayOfPayment, date)
         {
+            this.TypeOfExpense = ExpenseType.Utility;
             this.utilitiesType = utilitiesType;
         }
 
@@ -20,6 +21,11 @@
             {
                 return this.utilitiesType;
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + "#" + this.UtilitiesType.ToString();
         }
     }
 }
