@@ -1,8 +1,10 @@
 ﻿namespace BudgetCalculator.Core.FamilyBudget
 {
     using System;
+    using System.Collections.Generic;
     using BudgetCalculator.Core.Interface;
     using Enum;
+
     public abstract class Budget : IBudget
     {
         public decimal Balance
@@ -18,7 +20,7 @@
             }
         }
 
-        public Interval Period
+        public List<IExpenses> Expenses
         {
             get
             {
@@ -31,7 +33,7 @@
             }
         }
 
-        public decimal Value
+        public List<IIncome> Incommings
         {
             get
             {

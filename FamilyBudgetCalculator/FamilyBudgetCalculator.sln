@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetCalculator.Core", "BudgetCalculator.Core\BudgetCalculator.Core.csproj", "{098BC653-D531-4E37-A155-49F60862DE7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalculator", "ConsoleCalculator\ConsoleCalculator.csproj", "{5C427408-B17B-4E92-843F-F7B0E30AA8B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{098BC653-D531-4E37-A155-49F60862DE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{098BC653-D531-4E37-A155-49F60862DE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{098BC653-D531-4E37-A155-49F60862DE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C427408-B17B-4E92-843F-F7B0E30AA8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C427408-B17B-4E92-843F-F7B0E30AA8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C427408-B17B-4E92-843F-F7B0E30AA8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C427408-B17B-4E92-843F-F7B0E30AA8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
