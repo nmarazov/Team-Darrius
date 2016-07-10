@@ -5,6 +5,7 @@
         Dayly,
         Weekly,
         Monthly,
-        Yearly
+        Yearly,
+        OneTime
     }
 }
