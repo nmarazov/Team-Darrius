@@ -43,13 +43,13 @@
   <ItemGroup>
     <Compile Include="Enum\AccommodationExpenseType.cs" />
     <Compile Include="Enum\EveryDayLifeExpenseType.cs" />
+    <Compile Include="Enum\ExpenseType.cs" />
     <Compile Include="Enum\IncomeType.cs" />
     <Compile Include="Enum\OtherExpensesType.cs" />
     <Compile Include="Enum\PaymentType.cs" />
     <Compile Include="Enum\Interval.cs" />
     <Compile Include="Enum\FamilyMemberStatus.cs" />
-    <Compile Include="Enum\PersonalExpensesType.cs" />
-    <Compile Include="Enum\UtilitiesExpensesType.cs" />
+    <Compile Include="Enum\UtilitiesExpenseType.cs" />
     <Compile Include="FamilyBudget\Budget.cs" />
     <Compile Include="FamilyBudget\Expenses\Accommodation\AccommodationExpenses.cs" />
     <Compile Include="FamilyBudget\Expenses\Expenses.cs" />

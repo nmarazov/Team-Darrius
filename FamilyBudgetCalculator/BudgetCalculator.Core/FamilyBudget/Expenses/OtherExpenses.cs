@@ -1,32 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetCalculator.Core.Interface;
 using BudgetCalculator.Core.Enum;
+using BudgetCalculator.Core.Interface;
 
 namespace BudgetCalculator.Core.FamilyBudget.Expenses
 {
-    public class OtherExpenses : Expenses, IOtherExpenses
+    public class OtherExpenses : Expenses, INameable
     {
-        private OtherExpensesType otherType;
+        private string name;
 
-        public OtherExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, OtherExpensesType otherType, DateTime date = default(DateTime))
-            : base(amount, comment, period, wayOfPayment, date)
+        public OtherExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, DateTime date = default(DateTime)) : base(amount, comment, period, wayOfPayment, date)
         {
-            this.otherType = otherType;
+            this.TypeOfExpense = ExpenseType.Other;
         }
 
-        public OtherExpensesType OthersType
+        public string Name
         {
             get
             {
-                return this.otherType;
+                return name;
+            }
+
+            set
+            {
+                name = value;
             }
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + "," + this.Name;
+        }
+
+        public static OtherExpenses FromString(string input)
+        {
+            string[] split = input.Split(',');
+            decimal value = decimal.Parse(split[1]);
+            string comment = split[2];
+            Interval interval = (Interval)System.Enum.Parse(typeof(Interval), split[3], true);
+            PaymentType paymentType = (PaymentType)System.Enum.Parse(typeof(PaymentType), split[4], true);
+            DateTime date = DateTime.Parse(split[5]);
+            OtherExpenses expense = new OtherExpenses(value, comment, interval, paymentType, date);
+            expense.Name = split[6];
+            return expense;
+        }
     }
-
 }
-
-

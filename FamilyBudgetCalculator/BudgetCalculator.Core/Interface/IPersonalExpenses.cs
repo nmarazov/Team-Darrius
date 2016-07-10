@@ -1,4 +1,4 @@
-﻿using BudgetCalculator.Core.Enum;
+﻿using BudgetCalculator.Core.Family;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace BudgetCalculator.Core.Interface
 {
     public interface IPersonalExpenses
     {
-        PersonalExpensesType PersonalType { get; }
+        FamilyMember ConnectedFamilyMember { get; set; }
     }
 }
