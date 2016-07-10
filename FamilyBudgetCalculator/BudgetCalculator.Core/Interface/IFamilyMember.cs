@@ -4,7 +4,9 @@
 
     public interface IFamilyMember
     {
-        string Name { get; }
+        string FirstName { get; set; }
+
+        string FamilyName { get; set; }
 
         sbyte Age { get; }
 
