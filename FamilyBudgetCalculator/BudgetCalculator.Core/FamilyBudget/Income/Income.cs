@@ -24,12 +24,12 @@
 
         public override string ToString()
         {
-            return string.Format("{0}*{1}*{2}*{3}*{4}{5}", Amount.ToString(), Comment, Period.ToString(), TypeOfIncome.ToString(), Date.ToString());
+            return string.Format("{0}#{1}#{2}#{3}#{4}", Amount.ToString(), Comment, Period.ToString(), TypeOfIncome.ToString(), Date.ToString());
         }
 
         public static Income FromString(string input)
         {
-            string[] split = input.Split('*');
+            string[] split = input.Split('#');
             return new Income(
                 decimal.Parse(split[0]),
                 split[1],

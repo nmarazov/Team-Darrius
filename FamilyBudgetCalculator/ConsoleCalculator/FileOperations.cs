@@ -19,7 +19,7 @@ namespace ConsoleCalculator
             string familyString = GetFamilyString(familyList);
             string expenseString = GetExpensesString(expenseList);
             string incomeString = GetIncomesString(incomeList);
-            string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "FamilyBudgetCalculator");
+            string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "FamilyBudgetCalculator",saveFileName);
 
             Directory.CreateDirectory(path);
 
@@ -85,7 +85,7 @@ namespace ConsoleCalculator
             }
             else
             {
-                string[] lines = File.ReadAllLines(Path.Combine(path, "incomes.txt"), Encoding.UTF8);
+                string[] lines = File.ReadAllLines(Path.Combine(path, "expenses.txt"), Encoding.UTF8);
                 foreach (var line in lines)
                 {
                     string[] parts = line.Split('#');
