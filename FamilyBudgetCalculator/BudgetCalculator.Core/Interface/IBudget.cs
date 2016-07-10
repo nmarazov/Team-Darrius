@@ -1,13 +1,12 @@
-﻿namespace BudgetCalculator.Core.Interface
-{
-    using BudgetCalculator.Core.Enum;
+﻿using System.Collections.Generic;
 
+namespace BudgetCalculator.Core.Interface
+{
     public interface IBudget
     {
         decimal Balance { get; set; }
+        List<IExpenses> Expenses { get; set; }
+        List<IIncome> Incommings { get; set; }
 
-        decimal Value { get; set; }
-
-        Interval Period { get; set; }
     }
 }

@@ -69,11 +69,15 @@
     <Compile Include="FamilyBudget\Income\Income.cs" />
     <Compile Include="FamilyBudget\Income\OtherIncome.cs" />
     <Compile Include="FamilyBudget\Income\Salary.cs" />
+    <Compile Include="Family\ValidateAgeAttribute.cs" />
+    <Compile Include="Family\ValidateNameAttribute.cs" />
     <Compile Include="Interface\IBudget.cs" />
     <Compile Include="Interface\IExpenses.cs" />
     <Compile Include="Interface\IFamilyMember.cs" />
+    <Compile Include="Interface\IFundOperation.cs" />
     <Compile Include="Interface\IIncome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
