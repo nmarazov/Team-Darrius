@@ -11,7 +11,7 @@
         // private string familyName;
         private string name;
         
-        private FamilyMemberStatus familyMemeberStatus;
+        private FamilyMemberStatus familyMemberStatus;
 
         //public FamilyMember(string firstName, string familyName, sbyte age, FamilyMemberStatus status)
         public FamilyMember(string name, sbyte age, FamilyMemberStatus status)
@@ -20,7 +20,7 @@
             //this.FamilyName = familyName;
             this.Name = name;
             this.Age = age;
-            this.Status = familyMemeberStatus;
+            this.Status = familyMemberStatus;
         }
 
         [ValidateAge]
@@ -50,8 +50,8 @@
 
         public FamilyMemberStatus Status
         {
-            get { return this.familyMemeberStatus; }
-            set { this.familyMemeberStatus = value; }
+            get { return this.familyMemberStatus; }
+            set { this.familyMemberStatus = value; }
         }
 
     }

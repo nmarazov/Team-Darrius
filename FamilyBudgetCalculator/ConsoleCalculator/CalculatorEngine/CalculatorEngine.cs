@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetCalculator.Core.Family;
+using BudgetCalculator.Core.Enum;
 
 namespace ConsoleCalculator
 {
@@ -61,10 +63,9 @@ namespace ConsoleCalculator
 
         public static void InputFamilyMemberScreen()
         {
-            //TODO: Declaration of local family member
-
             string inputName = "";
             sbyte inputAge = 0;
+            FamilyMemberStatus inputStatus = 0; //FamilyMemberStatus.Working;
 
             Console.WriteLine();
             Console.WriteLine();
@@ -103,6 +104,8 @@ namespace ConsoleCalculator
                 }
 
             }
+            // TODO: Input a family member status
+            FamilyMember inputFamilyMember = new FamilyMember(inputName, inputAge, inputStatus);
 
             //TODO: add the family member in the list
             InputFamilyMemberMenu();
@@ -133,7 +136,7 @@ namespace ConsoleCalculator
             }
             else
             {
-                StartPage();
+                // StartPage();
             }
 
         }

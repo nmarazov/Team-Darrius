@@ -1,6 +1,7 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
     using System.Collections.Generic;
+
     public class Family
     {
         public ICollection<FamilyMember> FamilyMembers { get; private set; }
