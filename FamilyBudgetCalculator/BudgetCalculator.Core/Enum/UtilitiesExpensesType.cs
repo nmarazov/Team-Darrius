@@ -1,6 +1,6 @@
 ﻿namespace BudgetCalculator.Core.Enum
 {
-    public enum UtilitiesExpenseType
+    public enum UtilitiesExpensesType
     {
         Electricity,
         Water,
