@@ -6,79 +6,67 @@
     using BudgetCalculator.Core.Interface;
     using Enum;
 
-    public class Budget : IBudget
+    public static class Budget 
     {
-        private List<IExpenses> expenses;
-        private List<IIncome> incomes;
-        private decimal balance;
+        public static List<IExpenses> expenses = new List<IExpenses>();
+        public static List<IIncome> incomes = new List<IIncome>();
+        public static decimal balance;
 
-        public Budget()
-        {
-            this.Expenses = new List<IExpenses>();
-            this.Incommings = new List<IIncome>();
-        }
+       
 
-        public decimal Balance
+        public static decimal Balance
         {
             get
             {
-                return this.GetBalance();
+                return GetBalance();
             }
         }
 
-        public ICollection<IExpenses> Expenses
-        {
-            get; protected set;
-        }
+        
 
-        public ICollection<IIncome> Incommings
+        private static decimal GetBalance()
         {
-            get; protected set;
-        }
-
-        private decimal GetBalance()
-        {
-            var incomeSum = this.Incommings.Sum(x => x.Amount);
-            var expenseSum = this.Expenses.Sum(x => x.Amount);
+            var incomeSum = Budget.incomes.Sum(x => x.Amount);
+            var expenseSum = Budget.expenses.Sum(x => x.Amount);
 
             return incomeSum - expenseSum;
         }
 
-        public void AddExpense(IExpenses expense)
+        public static void AddExpense(IExpenses expense)
         {
-            this.Expenses.Add(expense);
+            Budget.expenses.Add(expense);
         }
 
-        public void AddIncome(IIncome income)
+        public static void AddIncome(IIncome income)
         {
-            this.Incommings.Add(income);
+            Budget.incomes.Add(income);
         }
 
-        public void RemoveExpense(IExpenses expense)
+        public static void RemoveExpense(IExpenses expense)
         {
-            this.Expenses.Remove(expense);
+            Budget.expenses.Remove(expense);
         }
 
-        public void RemoveIncome(IIncome income)
+        public static void RemoveIncome(IIncome income)
         {
-            this.Incommings.Remove(income);
+            Budget.incomes.Remove(income);
         }
 
-        public ICollection<IIncome> GetIncomesByType(IncomeType type)
+        public static ICollection<IIncome> GetIncomesByType(IncomeType type)
         {
-            var incomesByType = this.Incommings.Where(x => x.TypeOfIncome == type).ToList();
+            var incomesByType = Budget.incomes.Where(x => x.TypeOfIncome == type).ToList();
 
             return incomesByType;
         }
 
-        public ICollection<IIncome> GetIncomesByDate(DateTime startDate)
+        public static ICollection<IIncome> GetIncomesByDate(DateTime startDate)
         {
-            return this.GetIncomesByDate(startDate, DateTime.Now);
+            return Budget.GetIncomesByDate(startDate, DateTime.Now);
         }
 
-        public ICollection<IIncome> GetIncomesByDate(DateTime startDate, DateTime endDate)
+        public static ICollection<IIncome> GetIncomesByDate(DateTime startDate, DateTime endDate)
         {
-            var incomesByDate = this.Incommings
+            var incomesByDate = Budget.incomes
                 .Where(x => x.Date < endDate && x.Date > startDate)
                 .ToList();
 

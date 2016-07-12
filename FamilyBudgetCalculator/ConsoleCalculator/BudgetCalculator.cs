@@ -6,7 +6,7 @@
 
     public class BudgetCalculator
     {
-        public Family Family { get; set; }
+        //public Family Family { get; set; }
         
     }
 }

@@ -1,19 +1,33 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
+    using System;
     using System.Collections.Generic;
+    using System.Text;
 
-    public class Family
+    public static class Family
     {
-        public ICollection<FamilyMember> FamilyMembers { get; private set; }
+        public static ICollection<FamilyMember> FamilyMembers = new List<FamilyMember>();
 
-        public string FamilyName { get; set; }
+        public static string FamilyName { get; set; }
 
-        public void AddMember(FamilyMember familyMember)
+        public static void AddMember(FamilyMember familyMember)
         {
-            if (!this.FamilyMembers.Contains(familyMember))
+            //if (!Family.FamilyMembers.Contains(familyMember))
+            //{
+            //if (Family.FamilyMembers == null)
+                //FamilyMembers = ;
+                Family.FamilyMembers.Add(familyMember);
+            //}
+        }
+
+        public static void Print()
+        {
+            
+            foreach (var member in Family.FamilyMembers)
             {
-                this.FamilyMembers.Add(familyMember);
+                Console.WriteLine(member.ToString());
             }
+            
         }
     }
 }

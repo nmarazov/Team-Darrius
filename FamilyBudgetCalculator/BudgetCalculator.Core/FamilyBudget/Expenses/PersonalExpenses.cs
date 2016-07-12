@@ -11,7 +11,8 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
         private FamilyMember connectedFamilyMember;
         private string name;
 
-        public PersonalExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, DateTime date = default(DateTime)) : base(amount, comment, period, wayOfPayment, date)
+        public PersonalExpenses(decimal amount, string comment, Interval period, PaymentType wayOfPayment, DateTime date = default(DateTime)) 
+            : base(amount, comment, period, wayOfPayment, date)
         {
             this.TypeOfExpense = ExpenseType.Personal;
         }
@@ -70,9 +71,9 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
 
                 string familyMemberString = string.Format("{0},{1},{2},{3}", firstName, lastName, age, status);
 
-                FamilyMember comparer = FamilyMember.FromString(familyMemberString);
-                FamilyMember trueMember = familyMembers.Find(x => x.ToString() == comparer.ToString());
-                expense.ConnectedFamilyMember = trueMember;
+                //FamilyMember comparer = FamilyMember.FromString(familyMemberString);
+                //FamilyMember trueMember = familyMembers.Find(x => x.ToString() == comparer.ToString());
+                //expense.ConnectedFamilyMember = trueMember;
             }
             else
             {
@@ -81,5 +82,7 @@ namespace BudgetCalculator.Core.FamilyBudget.Expenses
 
             return expense;
         }
+
+ 
     }
 }

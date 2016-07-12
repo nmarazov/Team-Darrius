@@ -1,23 +1,19 @@
 ﻿namespace BudgetCalculator.Core.Family
 {
     using System;
+    using System.Text;
     using Enum;
     using Interface;
 
     public class FamilyMember : IFamilyMember, INameable
     {
         private sbyte age;
-        // private string firstName;
-        // private string familyName;
         private string name;
         
         private FamilyMemberStatus familyMemberStatus;
 
-        //public FamilyMember(string firstName, string familyName, sbyte age, FamilyMemberStatus status)
         public FamilyMember(string name, sbyte age, FamilyMemberStatus status)
         {
-            //this.FirstName = firstName;
-            //this.FamilyName = familyName;
             this.Name = name;
             this.Age = age;
             this.Status = familyMemberStatus;
@@ -31,20 +27,13 @@
         }
 
         [ValidateName]
-        //public string FirstName { get; set; }
+         
         public string Name
         {
-            set { this.Name = value; }
-            get { return this.Name; }
+            set { this.name = value; }
+            get { return this.name; }
         }
 
-         //   [ValidateName]
-
-        //public string FamilyName
-        //{
-        //    set { this.familyName = value; }
-        //    get { return this.familyName; }
-        //}
 
 
 
@@ -53,6 +42,15 @@
             get { return this.familyMemberStatus; }
             set { this.familyMemberStatus = value; }
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
+            sb.AppendFormat("Name: {0}, age: {1}", this.Name, this.Age);
+            return sb.ToString();
+        }
+
 
     }
 }

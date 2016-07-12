@@ -46,7 +46,7 @@ namespace ConsoleCalculator
                 string[] lines = File.ReadAllLines(Path.Combine(path, "family.csv"), Encoding.UTF8);
                 foreach(var line in lines)
                 {
-                    family.Add(FamilyMember.FromString(line));
+                    //family.Add(FamilyMember.FromString(line));
                 }
             }
 

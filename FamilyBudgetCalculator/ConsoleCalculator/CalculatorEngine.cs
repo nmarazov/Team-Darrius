@@ -61,7 +61,7 @@ namespace ConsoleCalculator
             return result;
         }
 
-        public static void InputFamilyMemberScreen(ICollection<FamilyMember> FamilyMembers)
+        public static void InputFamilyMemberScreen()
         {
             string inputName = "";
             sbyte inputAge = 0;
@@ -106,14 +106,17 @@ namespace ConsoleCalculator
             }
             // TODO: Input a family member status
             FamilyMember inputFamilyMember = new FamilyMember(inputName, inputAge, inputStatus);
-            FamilyMembers.Add(inputFamilyMember);
+            Family.AddMember(inputFamilyMember);
             //TODO: add the family member in the list
             InputFamilyMemberMenu();
         }
 
         public static void DisplayFamilyMembers()
         {
-            // TODO: 
+            foreach (var member in Family.FamilyMembers)
+            {
+                Console.WriteLine(member.ToString());
+            }
             InputFamilyMemberMenu();
         }
 
